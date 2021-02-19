@@ -122,9 +122,22 @@ export PROMPT_COMMAND="history -a; history -c; history -r; $PROMPT_COMMAND"
 
 export EDITOR=vim
 
-# Pip
+# Pip 
 export PIP_USE_MIRRORS=true
 export PIP_RESPECT_VIRTUALENV=true
+eval "`pip3 completion --bash`"
+
+# Virtualenv
+export WORKON_HOME=$HOME/.virtualenvs
+export PIP_VIRTUALENV_BASE=$WORKON_HOME
+export PROJECT_HOME=$HOME/dev
+export VIRTUALENVWRAPPER_VIRTUALENV_ARGS='--no-site-packages'
+
+if [[ -r /usr/local/bin/virtualenvwrapper.sh ]]; then
+    source /usr/local/bin/virtualenvwrapper.sh
+else
+    echo "WARNING: Can't find virtualenvwrapper.sh"
+fi
 
 # Source aliases
 if [ -f ~/.bash_aliases ]; then
@@ -144,4 +157,4 @@ if [ -d ~/.bash_local ]; then
     done
 fi
 
-#eval "`pip completion --bash`"
+
