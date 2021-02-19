@@ -1,5 +1,6 @@
 " Vim colorscheme -- PyChimp 
-"
+" https://raw.githubusercontent.com/notpratheek/Pychimp-vim/master/pychimp.vim
+
 " Crated specifically for Python coding ! (For other languages, I do suggest that 
 " you find other colorschemes, there are loads !)
 "
@@ -46,7 +47,7 @@ hi Character   ctermfg=142  ctermbg=NONE  cterm=NONE
 hi Visual      ctermfg=253  ctermbg=235   cterm=NONE
 hi VertSplit   ctermfg=232  ctermbg=244   cterm=NONE
 hi ErrorMsg    ctermfg=88   ctermbg=172   cterm=bold
-hi MatchParen  ctermfg=253  ctermbg=235   cterm=bold
+hi MatchParen  ctermfg=16   ctermbg=215   cterm=bold
 hi Folded      ctermfg=67   ctermbg=16    cterm=bold 
 hi FoldColumn  ctermfg=67   ctermbg=16    cterm=NONE
 hi LineNr      ctermfg=58   ctermbg=NONE  cterm=NONE
@@ -63,4 +64,3 @@ hi TabLineFill ctermfg=46   ctermbg=NONE  cterm=NONE
 
 " End of Colour scheme ! (Pretty small !:) )
 " Will add support for more languages eventually. !
-
