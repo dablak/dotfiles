@@ -12,9 +12,9 @@ mv .inputrc .inputrc_bckp 2>/dev/null
 
 
 # Create symbolic links
-ln -ns dotfiles/.bashrc .bashrc 
-ln -ns dotfiles/.bash_aliases .bash_aliases 
+ln -ns dotfiles/bash/.bashrc .bashrc 
+ln -ns dotfiles/bash/.bash_aliases .bash_aliases 
+ln -ns dotfiles/bash/.inputrc .inputrc
 ln -ns dotfiles/vim .vim 
 ln -ns dotfiles/vim/.vimrc .vimrc
 ln -ns dotfiles/.screenrc .screenrc
-ln -ns dotfiles/.inputrc .inputrc
