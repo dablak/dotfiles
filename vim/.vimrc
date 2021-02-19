@@ -5,8 +5,10 @@ set nocp
 " Pathogen
 "execute pathogen#infect()
 filetype off
+
 call pathogen#infect()
 call pathogen#helptags()
+
 syntax on
 
 " Sets how many lines of history VIM has to remember

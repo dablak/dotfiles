@@ -3,3 +3,4 @@ vim/.netrwhist
 vim/.viminfo
 vim/undo
 vim/bundle
+.DS_Store
