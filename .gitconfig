@@ -1,8 +1,0 @@
-[color]
-	ui = true
-[core]
-	editor = vim
-[alias]
-    st = status
-    ci = commit
-    co = checkout
