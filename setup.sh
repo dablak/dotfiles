@@ -3,6 +3,7 @@
 cd $HOME
 
 # Backup your dotfiles
+mv .profile .profile_bckp  2>/dev/null
 mv .bashrc .bashrc_bckp  2>/dev/null
 mv .bash_aliases .bash_aliases_bckp 2>/dev/null 
 mv .vim .vim_bckp  2>/dev/null
@@ -12,6 +13,7 @@ mv .inputrc .inputrc_bckp 2>/dev/null
 
 
 # Create symbolic links
+ln -ns dotfiles/bash/.profile .profile 
 ln -ns dotfiles/bash/.bashrc .bashrc 
 ln -ns dotfiles/bash/.bash_aliases .bash_aliases 
 ln -ns dotfiles/bash/.inputrc .inputrc
